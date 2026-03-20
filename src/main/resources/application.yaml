@@ -1,3 +1,20 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: wooricard-config
+  cloud:
+    config:
+      server:
+        git:
+          # 설정 파일(.yml)들을 모아둘 원격 Git 레포지토리 주소
+          uri: https://github.com/woori-card-msa/wooricard-config-repo
+          default-label: main
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.80:8761/eureka/
+  instance:
+    prefer-ip-address: true
