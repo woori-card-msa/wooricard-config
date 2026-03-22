@@ -20,7 +20,7 @@
 ### 1. 사전 요구 사항
 * **Java 17** 이상
 * **Gradle**
-* **Git Repository 권한**: 설정 파일이 담긴 [config-repo](https://github.com/woori-card-msa/wooricard-config-repo) 접근 권한 필요
+* **Git Repository 권한**: 설정 파일이 담긴 [config-repo](https://github.com/woori-card-msa/wooricard-config-repo?tab=readme-ov-file#-woori-card-config-repository) 접근 권한 필요
 
 ### 2. 서버 기동
 이 서버는 Eureka 서버가 실행된 이후 **두 번째로 실행**되어야 합니다.
@@ -38,7 +38,7 @@
 
 MSA 구조의 안정적인 구동을 위해 아래 순서를 반드시 지켜주세요.
 
-1. **[Eureka Server](https://github.com/woori-card-msa/wooricard-eureka)**: 서비스 레지스트리 선행 기동
+1. **[Eureka Server](https://github.com/woori-card-msa/wooricard-eureka?tab=readme-ov-file#-%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95-getting-started)**: 서비스 레지스트리 선행 기동
 2. **Config Server** (본 서비스) ◀ **NOW**
 3. **Microservices**: Gateway 및 도메인 서비스(Approval, Settlement 등) 실행
 
